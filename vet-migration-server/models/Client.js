@@ -14,6 +14,10 @@ const PhoneType = require("./PhoneType");
 
 const clientregistration = new Schema(
   {
+    f_clientid: {
+      type: String,
+      required: true
+    },
     clinic: {
       type: Schema.Types.ObjectId,
       ref: Clinic.modelName,
